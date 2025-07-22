@@ -14,6 +14,55 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <title>Licencia Nacional de Conducir</title>
     <link href="dni-digital.css" rel="stylesheet">
+    <style>
+      @media (max-width: 500px) {
+        .LICENCIA_content1 {
+          width: 95vw !important;
+          height: 62vw !important;
+          min-width: 240px;
+          min-height: 150px;
+          max-width: 100vw;
+          max-height: 80vw;
+        }
+        .LICENCIA_profilePhoto {
+          left: 5vw !important;
+          top: 10vw !important;
+          width: 22vw !important;
+          height: 30vw !important;
+          min-width: 50px;
+          min-height: 60px;
+        }
+        .LICENCIA_content1Letters {
+          left: 35vw !important;
+          top: 8vw !important;
+          font-size: 2.5vw !important;
+          max-width: 55vw;
+        }
+        .LICENCIA_content1Letters.clase {
+          left: 75vw !important;
+          top: 8vw !important;
+        }
+        .LICENCIA_content1Letters.claseinfo {
+          left: 88vw !important;
+          top: 13vw !important;
+        }
+        .LICENCIA_content1Letters.firma {
+          right: 5vw !important;
+          top: 45vw !important;
+        }
+      }
+      body {
+        background-color: #3630ba !important;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      html, body, #root, .masterContainer {
+        height: 100%;
+        min-height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <div id="root">
@@ -41,7 +90,7 @@
                           <div class="LICENCIA_front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
                             <img class="LICENCIA_IMG" alt="licencia_img" src="imgs/licencia_front_viejo.webp" style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 2px 8px #0002; border-radius: 10px;">
                             <!-- Foto del titular -->
-                            <div class="LICENCIA_profilePhoto" style="position: absolute; top: 58px; left: 30px; width: 110px; height: 150px; overflow: hidden; box-shadow: 0 1px 4px #0003;">
+                            <div class="LICENCIA_profilePhoto" style="position: absolute; top: 60px; left: 30px; width: 110px; height: 150px; overflow: hidden; box-shadow: 0 1px 4px #0003;">
                               <img alt="Licencia_photoUrl" src="imgs/cara1.jpg" style="width:100%;height:auto;">
                             </div>
                             <!-- Datos a la derecha de la foto -->
@@ -72,16 +121,16 @@
                               </div>
                             </div>
                             <!-- Clase a la derecha -->
-                            <div class="LICENCIA_content1Letters" style="position: absolute; top: 55px; left: 326px; text-align: left;">
+                            <div class="LICENCIA_content1Letters clase" style="position: absolute; top: 55px; left: 326px; text-align: left;">
                               <span class="DNI_text" style="font-size: 9px; font-weight: 500; color: #444;">
                                 9. Clases <span style="font-weight: 400; color: #888;">/ Class</span>
                               </span>
                             </div>
-                            <div class="LICENCIA_content1Letters" style="position: absolute; top: 65px; left: 380px; text-align: left;">
+                            <div class="LICENCIA_content1Letters claseinfo" style="position: absolute; top: 65px; left: 380px; text-align: left;">
                               <span class="DNI_text" style="font-weight: 700; font-size: 11px;">B1</span>
                             </div>
                             <!-- Firma y vencimiento -->
-                            <div class="LICENCIA_content1Letters" style="position: absolute;top: 167px;bottom: 30px;right: 5px;font-size: 9px;color: #222;font-family: 'Alfa Slab One', Arial, sans-serif;text-align: right;">
+                            <div class="LICENCIA_content1Letters firma" style="position: absolute;top: 167px;bottom: 30px;right: 5px;font-size: 9px;color: #222;font-family: 'Alfa Slab One', Arial, sans-serif;text-align: right;">
                               <img alt="Licencia_signature" src="imgs/firma.png" style="height:25px; width:auto; margin-top:-20px; margin-right:50px;"><br>
                               <span class="DNI_text" style="font-size: 9px; font-weight: 500; color: #444; margin-bottom: 2px; display: inline-block;">7. Firma del titular <span style="font-weight: 400; color: #888;">/ Signature</span></span><br>
                               <span class="DNI_text" style="font-size: 9px; font-weight: 500; color: #444; margin-bottom: 10px; display: inline-block;">4b. Vencimiento <span style="font-weight: 400; color: #888;">/ Expires</span></span><br>
